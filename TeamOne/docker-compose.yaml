@@ -1,0 +1,10 @@
+services:
+
+  cfml:
+    image: "ortussolutions/commandbox:adobe2025"
+    ports:
+      - "80:8080"
+    volumes:
+      - "./wwwroot:/app"
+    environment:
+      CFPM_INSTALL: "debugger,image,spreadsheet"

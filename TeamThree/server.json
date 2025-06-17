@@ -1,0 +1,31 @@
+{
+    "app":{
+        "cfengine":"adobe@2025.0.02+331451"
+    },
+    "cfconfigfile":".cfconfig.json",
+    "env":{
+        "CFCONFIG_ADMINPASSWORD":"commandbox",
+        "ENVIRONMENT":"development"
+    },
+    "jvm":{
+        "heapSize":"2048",
+        "minHeapSize":"512",
+        "javaVersion":"openjdk21"
+    },
+    "name":"AdobeCF2025Hackathon",
+    "openbrowser":"false",
+    "scripts":{
+        "onServerInitialInstall":"cfpm install spreadsheet,postgresql"
+    },
+    "trayEnable":"true",
+    "web":{
+        "host":"0.0.0.0",
+        "rewrites":{
+            "enable":"true"
+        },
+        "http":{
+            "enable":"true",
+            "port":"8082"
+        }
+    }
+}

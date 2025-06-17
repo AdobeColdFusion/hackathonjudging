@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "commandbox-cfconfig": "2.1.1",
+    "commandbox-cfformat": "0.21.0",
+    "commandbox-dotenv": "2.4.0"
+  },
+  "scripts": {
+    "format": "cfformat run ./"
+  }
+}
